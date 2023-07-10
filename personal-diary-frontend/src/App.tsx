@@ -1,14 +1,16 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components'
 import './App.css'
-
-function App() {
+import NavBar from './components/NavBar';
+import Home from './views/Home';
 
   const AppContainer = styled.div`
     min-height: 100vh;`;
-
+    
+function App() {
   return (
     <AppContainer>
-      this is the app
+      <NavBar />
+      <Home />
     </AppContainer>
   )
 }
