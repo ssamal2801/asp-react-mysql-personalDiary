@@ -16,6 +16,11 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['New Entry +'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+/**
+ * ResponsiveAppBar component to display the navigation bar
+ * @returns {JSX.Element} ResponsiveAppBar component
+ */
+
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
         null
