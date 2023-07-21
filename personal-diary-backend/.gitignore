@@ -1,5 +1,3 @@
-./node-modules
-
 *.swp
 *.*~
 project.lock.json
