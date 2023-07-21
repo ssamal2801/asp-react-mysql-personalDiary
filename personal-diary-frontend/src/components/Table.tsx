@@ -23,10 +23,6 @@ const Typography = styled.span`
     font-size: 0.8rem;
 `;
 
-const Paragraph = styled.p`
-    width: 100%;
-`;
-
 /**
  * BasicTable component to display the list of entries
  * @returns {JSX.Element} BasicTable component
@@ -124,9 +120,11 @@ export default function BasicTable({ records }: { records: Array<any> }) {
                             </TableRow>
                         ))
                     ) : (
-                        <Paragraph>
-                            Add a new entry to get started
-                        </Paragraph>
+                        <TableRow>
+                            <TableCell align="center" colSpan={4}>
+                                Add a new entry to get started
+                            </TableCell>
+                        </TableRow>
                     )}
                 </TableBody>
             </Table>
