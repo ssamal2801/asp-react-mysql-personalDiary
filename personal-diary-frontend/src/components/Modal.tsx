@@ -36,7 +36,11 @@ interface BasicModalProps {
  * @returns {JSX.Element} BasicModal component
  */
 export default function BasicModal({
-    modalContent = {},
+    modalContent = {
+        title: '',
+        content: '',
+        open: false,
+    },
     onClose = () => null,
     onSave = () => null,
 }: BasicModalProps) {
